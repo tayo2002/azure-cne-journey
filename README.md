@@ -15,3 +15,5 @@ Currently at Accenture Ireland.
 
 ## Tech Stack
 Azure | Terraform | Python | PowerShell | Gitß
+
+- [Week 2 — Azure Architecture & Services](./week-02-azure-architecture/README.md)
