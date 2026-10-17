@@ -29,6 +29,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. The address has a network part and a host part. With a /24, the first 24 bits are the network and the last 8 are the host; the subnet mask decides where the split is.
 - Still unclear: how the split changes with other masks (/16, /26) — Week 1.
 
+### 2026-10-17 — Repo and Azure cleanup
+- Repo: README rewritten with roadmap and Weeks 1–4 lab index; removed broken nested repo link and .DS_Store files.
+- Azure: deleted rg-rbac-test and an empty ResourceMoverRG. No resources left running. Kept cloud-shell-storage-northeurope for Cloud Shell.
+- Spend Jul–Sep 2026: €0.91 total, almost all from the Week 2 nginx VM.
+- Created budget-labs: €10/month, email alert at 80%.
+
 ## Open questions
 
 - 
