@@ -36,7 +36,7 @@ Created `custom-reader-week3` — cloned the built-in Reader role and scoped it
 to only the `rg-rbac-test` resource group.
 
 Assigned the role to myself. Verified I can view resources in that RG but nothing
-outside it. The role definition JSON is saved as `custom-role.json`.
+outside it.
 
 ---
 
