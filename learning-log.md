@@ -35,6 +35,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Spend Jul–Sep 2026: €0.91 total, almost all from the Week 2 nginx VM.
 - Created budget-labs: €10/month, email alert at 80%.
 
+### 2026-10-19 — Binary ↔ decimal (Week 1, Mon)
+1. To convert binary to decimal, line the bits up under the values 128, 64, 32, 16, 8, 4, 2, 1 and add up the values that sit over a 1.
+2. To convert decimal to binary, go left to right from 128: if the value fits into what's left, write 1 and subtract it; if not, write 0.
+3. An IPv4 address is 4 octets of 8 bits (32 bits in total); we show each octet in decimal because it's easier for people to read. The subnet mask, not the octets, decides which part is network and which is host.
+- Practice: 8/8 conversions correct, including 10.0.0.4 → 00001010.00000000.00000000.00000100.
+
 ## Open questions
 
 - 
