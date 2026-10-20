@@ -41,6 +41,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. An IPv4 address is 4 octets of 8 bits (32 bits in total); we show each octet in decimal because it's easier for people to read. The subnet mask, not the octets, decides which part is network and which is host.
 - Practice: 8/8 conversions correct, including 10.0.0.4 → 00001010.00000000.00000000.00000100.
 
+### 2026-10-20 — Private, public, loopback, APIPA (Week 1, Tue)
+1. A public IP is unique across the whole internet; a private IP only needs to be unique inside its own network, so the same private ranges are reused everywhere. NAT swaps the private IP for the router's public IP on the way out.
+2. The 3 private ranges are 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16. Traps: only 172.16–172.31 is private, and only 192.168 (not 192.169).
+3. Loopback (127.0.0.1) means "this machine" — if you can ping it, the device's network software works. APIPA (169.254.x.x) is the address a device gives itself when DHCP doesn't reply, so it points to a DHCP or connection problem.
+- Quiz: 8/9 — missed 192.169.1.1 (public).
+- Checked my Mac: private IP is in 192.168.x.x; public IP is different because of NAT.
+
 ## Open questions
 
 - 
