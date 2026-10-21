@@ -48,6 +48,20 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Quiz: 8/9 — missed 192.169.1.1 (public).
 - Checked my Mac: private IP is in 192.168.x.x; public IP is different because of NAT.
 
+### 2026-10-21 — Subnet masks and CIDR (Week 1, Wed)
+1. A subnet mask is 32 bits like an IP address: 1s are network bits and 0s are host bits. /N means the first N bits are 1s.
+2. Host bits = 32 − N. Addresses = 2^(host bits). Usable = addresses − 2 (network + broadcast). Azure usable = addresses − 5, because Azure reserves 5 per subnet.
+3. A VNet is the container and its subnets must fit inside it, so the VNet needs a bigger range — e.g. my Week 2 VNet 10.0.0.0/16 holds two /24 subnets with room for 254 more.
+
+| CIDR | Mask | Host bits | Addresses | Usable | Azure usable |
+|---|---|---|---|---|---|
+| /16 | 255.255.0.0 | 16 | 65,536 | 65,534 | 65,531 |
+| /24 | 255.255.255.0 | 8 | 256 | 254 | 251 |
+| /26 | 255.255.255.192 | 6 | 64 | 62 | 59 |
+| /28 | 255.255.255.240 | 4 | 16 | 14 | 11 |
+
+- Table: all numbers correct. Lesson: write every octet as exactly 8 bits.
+
 ## Open questions
 
 - 
