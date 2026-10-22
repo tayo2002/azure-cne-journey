@@ -62,6 +62,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 
 - Table: all numbers correct. Lesson: write every octet as exactly 8 bits.
 
+### 2026-10-22 — Block size method (Week 1, Thu)
+1. Block size method: /N means N ones from the left, so convert the interesting octet to decimal to get the mask number. Block size = 256 − that number. List the blocks (0, block, 2×block…) and find where the IP falls: network = start of the block, broadcast = next block − 1, usable hosts = block − 2.
+2. A class C has 256 addresses, and the block size is how big each piece is, so number of subnets = 256 ÷ block size (e.g. /27 → 8 subnets, /29 → 32).
+3. A /30 has block 4, so 4 addresses − network − broadcast = 2 usable — exactly one for each router on a point-to-point link, with none wasted.
+- Drills on subnettingpractice.com: completed all, with some help. Also learned: each router interface is its own subnet; switches don't create subnets.
+- Hardest part: random question types. Tomorrow: 20 drills alone.
+
 ## Open questions
 
 - 
