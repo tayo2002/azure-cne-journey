@@ -69,6 +69,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Drills on subnettingpractice.com: completed all, with some help. Also learned: each router interface is its own subnet; switches don't create subnets.
 - Hardest part: random question types. Tomorrow: 20 drills alone.
 
+### 2026-10-24 — 20 drills, /24 to /30 (Week 1, Fri — done Sat)
+1. For any /N from /24 to /30: take N − 24 bits and add those bit values from 128 down to get the last mask octet; block size = 256 − mask; usable hosts = block − 2; subnets in a class C = 256 ÷ block; binary = N − 24 ones followed by zeros (8 bits).
+- 20 drills on Basic subnetting practice, all done with no issues.
+- Saturday lab (rebuild Week 2 VNet with 3 self-sized subnets) moved to next Saturday and merged with the Week 2 DNS lab.
+- Next: finding network and broadcast of a specific IP (Week 2).
+
 ## Open questions
 
 - 
