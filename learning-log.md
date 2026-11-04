@@ -93,6 +93,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 | 10.0.1.64/26 | .64–.67, .127 | .68 | 59 |
 | 10.0.1.128/28 | .128–.131, .143 | .132 | 11 |
 
+### 2026-11-04 (cont.) — DNS resolution and record types (Week 2, Wed)
+1. DNS is the internet's phone book: it turns names into IPs.
+2. When I type google.com, the resolver (router/ISP) checks its cache first. If it's not cached, the root server says "ask .com", the .com server says "ask Google's DNS server", and Google's authoritative server gives the IP. The resolver caches it and sends it back to my Mac.
+3. The record I'll use most is the A record, because every website needs one to map its name to its server's IP — including every Repumax client site.
+- Record types: A (name → IPv4), AAAA (name → IPv6), CNAME (alias), MX (mail server), TXT (verification), PTR (IP → name). Quiz: 5/5.
+
 ## Open questions
 
 - 
