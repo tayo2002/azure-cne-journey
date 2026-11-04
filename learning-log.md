@@ -80,6 +80,19 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Mistakes on the way: picked sizes too small (/28 for 20 VMs, /29 for 8) and started every subnet at 10.0.0.0. Fix: Azure usable must be ≥ VMs needed, and each subnet starts after the previous one ends.
 - Gap of ~10 days before this lab — needed a full re-walkthrough. Lesson: keep the daily habit going.
 
+### 2026-11-04 (cont.) — VLSM across octets + Azure's 5 reserved IPs (Week 2, Mon–Tue)
+- Carved 10.0.0.0/16 into a /24, two /26s and a /28: 10.0.0.0/24, 10.0.1.0/26, 10.0.1.64/26, 10.0.1.128/28. A /24 fills a whole third octet, so the next subnet rolls over to 10.0.1.0.
+- Azure reserves 5 IPs in every subnet: the first 4 (network, default gateway, 2 × Azure DNS) and the last (broadcast). The first VM always gets range start + 4.
+- The block size comes from the /N (256 − mask, or 2^(32 − N)) — the question never gives it directly.
+- Mistakes: wrote the CIDR with the wrong /N, wrote a range as end–start, used the next subnet's first address as this one's last, started counting reserved IPs at .1 instead of .0. All fixed by the final attempt.
+
+| Subnet | Reserved | First VM | Azure usable |
+|---|---|---|---|
+| 10.0.0.0/24 | .0–.3, .255 | .4 | 251 |
+| 10.0.1.0/26 | .0–.3, .63 | .4 | 59 |
+| 10.0.1.64/26 | .64–.67, .127 | .68 | 59 |
+| 10.0.1.128/28 | .128–.131, .143 | .132 | 11 |
+
 ## Open questions
 
 - 
