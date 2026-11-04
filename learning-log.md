@@ -99,6 +99,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. The record I'll use most is the A record, because every website needs one to map its name to its server's IP — including every Repumax client site.
 - Record types: A (name → IPv4), AAAA (name → IPv6), CNAME (alias), MX (mail server), TXT (verification), PTR (IP → name). Quiz: 5/5.
 
+### 2026-11-04 (cont.) — Recursive vs authoritative, TTL, dig (Week 2, Thu)
+1. A recursive resolver finds the records by asking other servers and caches them; an authoritative server owns the records for a domain.
+2. TTL is the number of seconds a resolver may cache a DNS answer. It matters when moving a client's website, because the old IP stays cached until the TTL runs out.
+- dig findings: TTL counted down live (294 → 210) as the cached answer aged. My router (192.168.1.1, port 53) answered every query — it's my recursive resolver. Gmail's primary MX is gmail-smtp-in.l.google.com (lower priority number = tried first). www.microsoft.com is a CNAME to an Akamai CDN host (edgekey.net). dig -x 8.8.8.8 → dns.google (PTR).
+- Learned to read a dig answer line: name · TTL · class · type · (priority) · value.
+
 ## Open questions
 
 - 
