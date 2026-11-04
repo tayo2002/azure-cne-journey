@@ -75,6 +75,11 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Saturday lab (rebuild Week 2 VNet with 3 self-sized subnets) moved to next Saturday and merged with the Week 2 DNS lab.
 - Next: finding network and broadcast of a specific IP (Week 2).
 
+### 2026-11-04 — VLSM VNet lab (Week 1 Sat lab, done late)
+- Sized 3 subnets for 50 / 20 / 8 VMs as /26, /27, /28 and built them in a 10.0.0.0/16 VNet. Portal showed 59 / 27 / 11 available IPs, matching my calculations.
+- Mistakes on the way: picked sizes too small (/28 for 20 VMs, /29 for 8) and started every subnet at 10.0.0.0. Fix: Azure usable must be ≥ VMs needed, and each subnet starts after the previous one ends.
+- Gap of ~10 days before this lab — needed a full re-walkthrough. Lesson: keep the daily habit going.
+
 ## Open questions
 
 - 
