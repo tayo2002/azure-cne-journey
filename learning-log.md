@@ -113,6 +113,11 @@ Format: date — what I studied/built — time spent — what's still unclear
   - /19 broadcast: swapped octets (.255.223 instead of .223.255).
 - Rule to remember: for /17–/23, do the 4 steps in the 3rd octet, then the 4th octet is .0 for network and .255 for broadcast.
 
+### 2026-11-05 (cont.) — Private DNS lab (Week 2, Sat)
+- Built 2 VMs in snet-web /26 and snet-app /27 with a Private DNS zone (cne.internal) linked with auto-registration. vm-web pinged vm-app by IP and by name.
+- Predicted both VM IPs (10.0.0.4 and 10.0.0.68) from the reserved-IP rule — both exactly right. (First predicted the network address; corrected to range start + 4.)
+- Hit 3 real-world problems: no VM capacity in North Europe (moved to UK South), tag policy vs the DNS link form (used Azure CLI with --tags), and a VNet created in the wrong resource group (fixed with az resource move).
+
 ## Open questions
 
 - 
