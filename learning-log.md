@@ -105,6 +105,14 @@ Format: date — what I studied/built — time spent — what's still unclear
 - dig findings: TTL counted down live (294 → 210) as the cached answer aged. My router (192.168.1.1, port 53) answered every query — it's my recursive resolver. Gmail's primary MX is gmail-smtp-in.l.google.com (lower priority number = tried first). www.microsoft.com is a CNAME to an Akamai CDN host (edgekey.net). dig -x 8.8.8.8 → dns.google (PTR).
 - Learned to read a dig answer line: name · TTL · class · type · (priority) · value.
 
+### 2026-11-05 — 20 timed drills (Week 2, Fri)
+- Subnet Sprint, including /16–/23: 16/20 fully correct, 18/20 under 60 seconds.
+- All /24–/30 questions correct (one typo). Every real mistake was a 3rd-octet question:
+  - /17: didn't apply block 128 in the 3rd octet (kept .220 instead of .128).
+  - /19: used block 16 instead of 32 (picked .240 instead of .224).
+  - /19 broadcast: swapped octets (.255.223 instead of .223.255).
+- Rule to remember: for /17–/23, do the 4 steps in the 3rd octet, then the 4th octet is .0 for network and .255 for broadcast.
+
 ## Open questions
 
 - 
