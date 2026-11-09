@@ -131,6 +131,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. "Any" means anyone on the internet can reach the login and try passwords all day, which isn't safe. Fix: restrict the source to my IP, or use Azure Bastion / no public IP.
 - Quiz: swapped 22 and 3389 at first; mixed up "protocol" (TCP/UDP) with a service name. Memory hook: SSH double S = 22 double 2; RDP = Remote Desktop = Windows.
 
+### 2026-11-09 (cont.) — Routing (Week 3, Wed)
+1. If the destination is outside its subnet, a device sends the packet to its default gateway. In Azure the default gateway is the subnet's first address + 1 (10.0.0.1 for 10.0.0.0/26, 10.0.0.65 for 10.0.0.64/27).
+2. A routing table is a list of destination → next hop. 0.0.0.0/0 is the default route: it means "everything else" and is used when nothing more specific matches.
+3. Longest prefix match: first check each route's range to see which ones match, then if more than one matches, the most specific route (biggest /N) wins.
+- Azure creates system routes automatically (VNet range → stays in the VNet), which is why my two subnets could ping each other. UDRs override them later (AZ-700).
+- Quiz: 4/6 first try — stopped at a /24 when a /25 also matched; thought 10.5.0.1 matched 10.0.0.0/16. Then 2/2 on the hard follow-ups.
+
 ## Open questions
 
 - 
