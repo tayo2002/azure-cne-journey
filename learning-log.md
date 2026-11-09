@@ -145,6 +145,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 - PAT changes Layer 3 (IP) and Layer 4 (port). Azure: a VM's public IP is static NAT (the VM only sees its 10.x address); Azure NAT Gateway is PAT for a whole subnet (AZ-700).
 - Quiz: 2/5 first try — thought PAT touched Layer 2, and that an outside connection "depends". Fixed with the outside-port explanation.
 
+### 2026-11-09 (cont.) — Stateful vs stateless firewalls (Week 3, Fri)
+1. A stateful firewall remembers connections in a state table (like the NAT translation table); a stateless firewall checks every packet with no memory.
+2. An NSG doesn't need outbound rules for replies because it's stateful — it remembers the inbound connection and lets the replies out.
+3. NSG vs Azure Firewall (didn't know this one — learned it): NSG is free, sits on each subnet or NIC and filters by IP + port (L3–4); Azure Firewall is paid, central for the whole network, and can filter by domain name (L7). NSG = the lock on every door, Azure Firewall = the security desk at the entrance. Real designs use both.
+- NSG default rules: AllowVnetInBound (65000) — why vm-web could ping vm-app; DenyAllInBound (65500) blocks the rest from outside.
+- Quiz: 2.5/5 — 5th topic of the night. Missed that a stateless firewall blocks the replies, so the website never loads.
+
 ## Open questions
 
 - 
