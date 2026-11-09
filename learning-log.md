@@ -118,6 +118,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Predicted both VM IPs (10.0.0.4 and 10.0.0.68) from the reserved-IP rule — both exactly right. (First predicted the network address; corrected to range start + 4.)
 - Hit 3 real-world problems: no VM capacity in North Europe (moved to UK South), tag policy vs the DNS link form (used Azure CLI with --tags), and a VNet created in the wrong resource group (fixed with az resource move).
 
+### 2026-11-09 — OSI and TCP/IP models (Week 3, Mon)
+1. The OSI model is a map that splits networking into 7 layers, so you can say where something happens or where a problem is (the protocols — HTTP, TCP, IP — are the actual rules).
+2. Layer 2 handles MAC addresses (the postman walking your street); layer 3 handles IP addresses (the street address, routed between towns by the post office); layer 4 handles ports (which flat in the building); layer 7 handles the HTTP request or DNS query (the question being asked).
+3. "Transport" doesn't mean routing — it means which app on the device gets the data. Routing is layer 3, Network.
+- TCP/IP model: Application (OSI 5–7), Transport (4), Internet (3), Network Access (1–2).
+- Quiz: 3/6 first try (put MAC at 3, routing at 4, HTTP at 6), then 3/3 after the letter analogy.
+
 ## Open questions
 
 - 
