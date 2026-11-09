@@ -125,6 +125,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 - TCP/IP model: Application (OSI 5–7), Transport (4), Internet (3), Network Access (1–2).
 - Quiz: 3/6 first try (put MAC at 3, routing at 4, HTTP at 6), then 3/3 after the letter analogy.
 
+### 2026-11-09 (cont.) — TCP vs UDP and key ports (Week 3, Tue)
+1. TCP sets up a connection first with a 3-way handshake (SYN, SYN-ACK, ACK) and checks every piece arrives, so it's reliable but slower — used for web pages and SSH. UDP has no connection and just sends; it's faster, but lost pieces stay lost — used for video calls and DNS lookups.
+2. Ports: 22 SSH/TCP (Linux terminal), 53 DNS/UDP (name lookups), 80 HTTP/TCP (web page), 443 HTTPS/TCP (secure web page), 3389 RDP/TCP (Windows remote desktop).
+3. "Any" means anyone on the internet can reach the login and try passwords all day, which isn't safe. Fix: restrict the source to my IP, or use Azure Bastion / no public IP.
+- Quiz: swapped 22 and 3389 at first; mixed up "protocol" (TCP/UDP) with a service name. Memory hook: SSH double S = 22 double 2; RDP = Remote Desktop = Windows.
+
 ## Open questions
 
 - 
