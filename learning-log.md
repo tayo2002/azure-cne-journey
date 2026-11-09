@@ -138,6 +138,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Azure creates system routes automatically (VNet range → stays in the VNet), which is why my two subnets could ping each other. UDRs override them later (AZ-700).
 - Quiz: 4/6 first try — stopped at a /24 when a /25 also matched; thought 10.5.0.1 matched 10.0.0.0/16. Then 2/2 on the hard follow-ups.
 
+### 2026-11-09 (cont.) — NAT and PAT (Week 3, Thu)
+1. NAT is when a router swaps a private IP for a public IP, because there aren't enough IPv4 addresses for every device. Static NAT maps one private to one public; PAT maps many private addresses to one public address.
+2. PAT tells devices apart by the outside port it gives each one (e.g. Mac → 40001, phone → 40002); the public IP is shared, so it can't.
+3. Table entries are only created when a device inside starts a connection outward, so a connection started from outside has no entry and the router drops it (unless there's port forwarding).
+- PAT changes Layer 3 (IP) and Layer 4 (port). Azure: a VM's public IP is static NAT (the VM only sees its 10.x address); Azure NAT Gateway is PAT for a whole subnet (AZ-700).
+- Quiz: 2/5 first try — thought PAT touched Layer 2, and that an outside connection "depends". Fixed with the outside-port explanation.
+
 ## Open questions
 
 - 
