@@ -152,6 +152,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 - NSG default rules: AllowVnetInBound (65000) — why vm-web could ping vm-app; DenyAllInBound (65500) blocks the rest from outside.
 - Quiz: 2.5/5 — 5th topic of the night. Missed that a stateless firewall blocks the replies, so the website never loads.
 
+### 2026-11-10 — NSG lab (Week 3, Sat)
+- Built vm-web with nginx and two NSG rules (SSH from my IP, HTTP from anywhere). Predicted 5 outcomes first: 3/5 right — missed that 3389 from my IP is denied (rule 100 only matches port 22) and that replies are allowed by stateful filtering.
+- Tested from my Mac (browser, SSH, nc on 3389) and with Network Watcher IP flow verify — every result matched the corrected predictions.
+- Predicted the VM IP as 10.0.0.0 again (network address) — it's 10.0.0.4. Same slip as last week; needs a card.
+- Fixed 3 problems: SSH key generation glitch, running SSH in Cloud Shell instead of my Mac, and the tag policy blocking Network Watcher.
+
 ## Open questions
 
 - 

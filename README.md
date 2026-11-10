@@ -24,6 +24,7 @@ IT Engineer → Cloud Network Engineer, documented as I go.
 | [04](./week-04-security-identity/README.md) | Security & identity | Defender for Cloud (Foundational CSPM) | Security posture, Secure Score |
 | [05](./week-05-vnet-vlsm/README.md) | VNet design with VLSM | `10.0.0.0/16` VNet with /26, /27, /28 subnets sized to workload | VLSM, Azure's 5 reserved IPs, non-overlapping subnets |
 | [06](./week-06-private-dns/README.md) | Private DNS | 2 VMs in 2 subnets, Private DNS zone with auto-registration, ping by name | Private DNS, A records, Run command, region capacity, Azure CLI |
+| [07](./week-07-nsg-rules/README.md) | NSG rules | Ubuntu + nginx VM with SSH-from-my-IP and HTTP-from-anywhere rules, verified 3 ways | NSG priority, stateful filtering, SSH keys, Network Watcher IP flow verify |
 
 ## Daily learning log
 
