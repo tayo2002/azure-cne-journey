@@ -167,6 +167,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 6. New to me: Azure Marketplace — a catalogue of ready-made images and solutions (the Ubuntu image I used came from it).
 - First answers to 2 and 4 described the topic instead of answering the question. Lesson for the exam: answer *which* or *how they differ*, not what the topic is.
 
+### 2026-11-11 (cont.) — MS Learn: Describe cloud computing (Week 4, Wed)
+- Knowledge check: 3/3.
+1. Public cloud: the provider delivers infrastructure, storage and apps over the internet, shared by many customers. Private cloud: all hardware and software dedicated to one organisation. Hybrid: a mix of both, with apps and data able to move between them.
+2. Consumption-based model: pay only for what you use, with no upfront cost — unlike buying servers, where you pay a large amount up front and keep paying even when they sit idle.
+3. On an IaaS VM, **I** manage the operating system (patching, updates) — first answered "both". Microsoft handles the physical host and hypervisor. Moving IaaS → PaaS → SaaS, Microsoft takes on more (PaaS: Microsoft manages the OS).
+
 ## Open questions
 
 - 
