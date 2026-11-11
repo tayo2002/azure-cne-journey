@@ -158,6 +158,15 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Predicted the VM IP as 10.0.0.0 again (network address) — it's 10.0.0.4. Same slip as last week; needs a card.
 - Fixed 3 problems: SSH key generation glitch, running SSH in Cloud Shell instead of my Mac, and the tag policy blocking Network Watcher.
 
+### 2026-11-11 — AZ-900 Study Cram, full video (Week 4, Mon–Tue)
+1. IaaS, PaaS and SaaS differ in how much control I keep versus how much the cloud provider manages. IaaS = Azure Virtual Machines, PaaS = Google App Engine / Azure App Service, SaaS = Gmail.
+2. In the shared responsibility model, Microsoft always handles the physical layer (datacenters, hardware, physical network); I always handle my data, my accounts/identities and my devices.
+3. Already done in a lab: creating a VM and choosing its region (and seeing North Europe run out of capacity).
+4. A region is a geographic area with datacenters; an availability zone is a separate datacenter within one region (protects against one datacenter failing); a region pair is two regions paired for disaster recovery (protects against a whole region failing).
+5. Hierarchy: management group → subscription → resource group → resource.
+6. New to me: Azure Marketplace — a catalogue of ready-made images and solutions (the Ubuntu image I used came from it).
+- First answers to 2 and 4 described the topic instead of answering the question. Lesson for the exam: answer *which* or *how they differ*, not what the topic is.
+
 ## Open questions
 
 - 
