@@ -173,6 +173,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 2. Consumption-based model: pay only for what you use, with no upfront cost — unlike buying servers, where you pay a large amount up front and keep paying even when they sit idle.
 3. On an IaaS VM, **I** manage the operating system (patching, updates) — first answered "both". Microsoft handles the physical host and hypervisor. Moving IaaS → PaaS → SaaS, Microsoft takes on more (PaaS: Microsoft manages the OS).
 
+### 2026-11-12 — MS Learn: Benefits of cloud services (Week 4, Thu)
+1. High availability measures uptime and accessibility; reliability is the ability to recover from failures and keep working (e.g. availability zones, region pairs).
+2. Scalability is the ability to expand capacity for long-term growth; elasticity is scaling up and down automatically based on immediate demand.
+3. Vertical scaling adds power to the same machine (e.g. D2s_v4 → D4s_v4); horizontal scaling adds more machines (e.g. 3 copies of a VM behind a load balancer, or a VM Scale Set).
+4. An SLA is a service level agreement between provider and customer. 99.9% means the service is up 99.9% of the time — about 43 minutes of downtime a month, ~8.7 hours a year.
+- All four answers described how things differ — last time's lesson applied.
+
 ## Open questions
 
 - 
