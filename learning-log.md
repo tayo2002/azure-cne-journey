@@ -181,6 +181,14 @@ Format: date — what I studied/built — time spent — what's still unclear
 4. An SLA is a service level agreement between provider and customer. 99.9% means the service is up 99.9% of the time — about 43 minutes of downtime a month, ~8.7 hours a year.
 - All four answers described how things differ — last time's lesson applied.
 
+### 2026-11-16 — MS Learn: Cloud service types (Week 4, Fri)
+- Knowledge check: 2/2.
+1. CapEx is an upfront, one-time investment in physical or long-term assets; OpEx is a recurring day-to-day cost for services. Cloud is OpEx.
+2. Windows Server VM with my own software = IaaS; web app code on Azure App Service = PaaS; Microsoft 365 email = SaaS.
+3. Serverless: the servers still exist, but the provider manages them completely — I write only the code and pay per run (e.g. Azure Functions).
+4. IaaS vs PaaS: IaaS gives more control and flexibility, but more management responsibility and operational complexity.
+- 5/5 first try.
+
 ## Open questions
 
 - 
