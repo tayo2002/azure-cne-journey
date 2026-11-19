@@ -193,6 +193,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Work voucher still has no date. Decided not to pay for AZ-900 now: finish AZ-900 domains 2–3 (they're AZ-104 foundations), start AZ-104 in early December, and sit AZ-900 when the voucher arrives (one week of practice tests).
 - Deadline: if no voucher by 31 Jan 2027, book AZ-900 and pay.
 
+### 2026-11-19 (cont.) — MS Learn: Core architectural components (Week 5, Mon)
+- Knowledge check: 3/3.
+1. A resource can only be in one resource group at a time, and resource groups can't be nested — they sit under a subscription.
+2. A subscription is a billing boundary and an access control boundary.
+3. Management groups manage access, policies and compliance across many subscriptions through inheritance — e.g. one "only UK South / North Europe" policy on a production management group applies to every subscription under it.
+4. A sovereign region is a dedicated, isolated set of datacenters that keeps data within a country's legal boundaries. It exists because some laws require data to stay in-country and be run by vetted staff — e.g. Azure Government (US government), Azure China (run by 21Vianet).
+
 ## Open questions
 
 - 
