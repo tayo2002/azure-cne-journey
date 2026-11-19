@@ -200,6 +200,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. Management groups manage access, policies and compliance across many subscriptions through inheritance — e.g. one "only UK South / North Europe" policy on a production management group applies to every subscription under it.
 4. A sovereign region is a dedicated, isolated set of datacenters that keeps data within a country's legal boundaries. It exists because some laws require data to stay in-country and be run by vetted staff — e.g. Azure Government (US government), Azure China (run by 21Vianet).
 
+### 2026-11-19 (cont.) — MS Learn: Azure compute (Week 5, Tue)
+- Knowledge check: 4/4.
+1. VM Scale Sets manage and automatically scale a group of identical VMs with demand (scalability); availability sets spread VMs across fault and update domains to survive hardware failures and planned maintenance (high availability).
+2. VMs when I need full control of the OS; containers for lightweight, portable apps that run the same everywhere; Azure Functions for small pieces of code that run on events, with no servers to manage (serverless).
+3. Azure Virtual Desktop is a cloud desktop service giving users a full Windows desktop and apps from almost any device. Unlike a single VM, it's centrally managed and supports multi-session Windows 10/11 (several users on one VM).
+4. PaaS for hosting websites: Azure App Service.
+
 ## Open questions
 
 - 
