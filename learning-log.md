@@ -207,6 +207,14 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. Azure Virtual Desktop is a cloud desktop service giving users a full Windows desktop and apps from almost any device. Unlike a single VM, it's centrally managed and supports multi-session Windows 10/11 (several users on one VM).
 4. PaaS for hosting websites: Azure App Service.
 
+### 2026-11-19 (cont.) — MS Learn: Azure networking (Week 5, Wed)
+- Knowledge check: 4/4.
+1. VPN Gateway goes over the internet, encrypted; ExpressRoute is a private line that skips the internet — faster, steadier and private, so it costs more.
+2. Site-to-site joins a whole office to Azure; point-to-site joins one laptop.
+3. VNet peering joins two VNets privately over Microsoft's network. Rule: their address ranges must not overlap.
+4. A public endpoint is reachable from the internet; a private endpoint gives a service a private IP inside my VNet, so it's never exposed to the internet.
+- Missed the peering rule and the "why private" part at first — simplified and re-learned.
+
 ## Open questions
 
 - 
