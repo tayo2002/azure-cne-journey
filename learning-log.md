@@ -216,6 +216,7 @@ Format: date — what I studied/built — time spent — what's still unclear
 - Missed the peering rule and the "why private" part at first — simplified and re-learned.
 
 ### 2026-11-19 (cont.) — MS Learn: Azure storage (Week 5, Thu)
+- Knowledge check: 100%.
 1. LRS keeps 3 copies in one datacenter; ZRS spreads copies across availability zones; GRS also replicates to another region for disaster recovery.
 2. Archive is the cheapest tier to store data, but retrieving it is slow (hours — it must be "rehydrated") and costs more.
 3. A blob stores unstructured data — images, videos, documents, backups.
