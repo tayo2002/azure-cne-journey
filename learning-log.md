@@ -6,7 +6,7 @@
 
 | Cert | Status | Target | Funded by work? |
 |------|--------|--------|-----------------|
-| AZ-900 Azure Fundamentals | Studying (domain 1 done) | 12 Dec 2026 | Course + voucher promised; no date yet |
+| AZ-900 Azure Fundamentals | Studying (domain 1 done) | When voucher arrives; book and pay if none by 31 Jan 2027 | Course + voucher promised; no date yet |
 | AZ-104 Azure Administrator | Not started | TBC | Asked manager |
 | AZ-700 Azure Network Engineer | Not started | TBC | Asked manager |
 
@@ -188,6 +188,10 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. Serverless: the servers still exist, but the provider manages them completely — I write only the code and pay per run (e.g. Azure Functions).
 4. IaaS vs PaaS: IaaS gives more control and flexibility, but more management responsibility and operational complexity.
 - 5/5 first try.
+
+### 2026-11-19 — Decision: AZ-900 waits for the work voucher
+- Work voucher still has no date. Decided not to pay for AZ-900 now: finish AZ-900 domains 2–3 (they're AZ-104 foundations), start AZ-104 in early December, and sit AZ-900 when the voucher arrives (one week of practice tests).
+- Deadline: if no voucher by 31 Jan 2027, book AZ-900 and pay.
 
 ## Open questions
 

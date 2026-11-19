@@ -9,8 +9,8 @@ IT Engineer → Cloud Network Engineer, documented as I go.
 
 | Certification | Target | Status |
 |---|---|---|
-| AZ-900 Azure Fundamentals | 12 Dec 2026 | In progress |
-| AZ-104 Azure Administrator | Apr 2027 | Not started |
+| AZ-900 Azure Fundamentals | When work voucher arrives (by 31 Jan 2027) | Studying |
+| AZ-104 Azure Administrator | Apr 2027 | Starts Dec 2026 |
 | AZ-700 Azure Network Engineer | Jul 2027 | Not started |
 | HashiCorp Terraform Associate | After AZ-700 | Not started |
 
