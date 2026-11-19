@@ -215,6 +215,12 @@ Format: date — what I studied/built — time spent — what's still unclear
 4. A public endpoint is reachable from the internet; a private endpoint gives a service a private IP inside my VNet, so it's never exposed to the internet.
 - Missed the peering rule and the "why private" part at first — simplified and re-learned.
 
+### 2026-11-19 (cont.) — MS Learn: Azure storage (Week 5, Thu)
+1. LRS keeps 3 copies in one datacenter; ZRS spreads copies across availability zones; GRS also replicates to another region for disaster recovery.
+2. Archive is the cheapest tier to store data, but retrieving it is slow (hours — it must be "rehydrated") and costs more.
+3. A blob stores unstructured data — images, videos, documents, backups.
+4. AzCopy is a command-line tool to copy data to, from and between storage accounts.
+
 ## Open questions
 
 - 
