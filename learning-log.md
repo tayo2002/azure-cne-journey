@@ -6,7 +6,7 @@
 
 | Cert | Status | Target | Funded by work? |
 |------|--------|--------|-----------------|
-| AZ-900 Azure Fundamentals | Waiting for work course | Nov 2026 | Yes (course + voucher) |
+| AZ-900 Azure Fundamentals | Studying (domain 1 done) | 12 Dec 2026 | Course + voucher promised; no date yet |
 | AZ-104 Azure Administrator | Not started | TBC | Asked manager |
 | AZ-700 Azure Network Engineer | Not started | TBC | Asked manager |
 
