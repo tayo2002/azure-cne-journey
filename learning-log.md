@@ -222,6 +222,13 @@ Format: date — what I studied/built — time spent — what's still unclear
 3. A blob stores unstructured data — images, videos, documents, backups.
 4. AzCopy is a command-line tool to copy data to, from and between storage accounts.
 
+### 2026-11-23 — MS Learn: Identity, access and security (Week 5, Fri)
+- Knowledge check: 4/4.
+1. Authentication verifies who the user is; authorisation decides what they're allowed to access and do.
+2. MFA requires two or more independent factors: something you know (password), something you have (phone), something you are (fingerprint/face).
+3. Conditional Access is an if → then rule: if the sign-in signals (user, location, device, app, risk) look a certain way, then allow, require MFA, or block — e.g. sign-in from outside Ireland → require MFA. (First answer was cut off.)
+4. Zero Trust: never trust, always verify.
+
 ## Open questions
 
 - 
